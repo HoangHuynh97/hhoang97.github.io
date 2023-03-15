@@ -1,0 +1,36 @@
+ERROR - 2023-02-22 09:13:03 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '* from tbl_song limit 10' at line 1 in C:\Dev\xampp\htdocs\music\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Dev\xampp\htdocs\music\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('select RAND(), ...', 0)
+#1 C:\Dev\xampp\htdocs\music\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('select RAND(), ...')
+#2 C:\Dev\xampp\htdocs\music\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('select RAND(), ...')
+#3 C:\Dev\xampp\htdocs\music\app\Controllers\Home.php(23): CodeIgniter\Database\BaseConnection->query('select RAND(), ...')
+#4 C:\Dev\xampp\htdocs\music\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#5 C:\Dev\xampp\htdocs\music\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\Dev\xampp\htdocs\music\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Dev\xampp\htdocs\music\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-02-22 09:13:03 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '* from tbl_song limit 10' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Controllers\Home.php(23): CodeIgniter\Database\BaseConnection->query('select RAND(), * from tbl_song limit 10')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-22 09:13:12 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*) from tbl_song limit 10' at line 1 in C:\Dev\xampp\htdocs\music\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Dev\xampp\htdocs\music\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('select RAND(*) ...', 0)
+#1 C:\Dev\xampp\htdocs\music\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('select RAND(*) ...')
+#2 C:\Dev\xampp\htdocs\music\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('select RAND(*) ...')
+#3 C:\Dev\xampp\htdocs\music\app\Controllers\Home.php(23): CodeIgniter\Database\BaseConnection->query('select RAND(*) ...')
+#4 C:\Dev\xampp\htdocs\music\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#5 C:\Dev\xampp\htdocs\music\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\Dev\xampp\htdocs\music\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Dev\xampp\htdocs\music\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-02-22 09:13:12 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*) from tbl_song limit 10' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Controllers\Home.php(23): CodeIgniter\Database\BaseConnection->query('select RAND(*) from tbl_song limit 10')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
